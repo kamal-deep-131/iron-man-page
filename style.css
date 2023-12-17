@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Rowdies:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --dark-black: #1F1F1F;
+    --light-black: #343434;
+    --h1-font: 90px;
+    --p-font: 19px;
+    --h1-font-family: 'Rowdies', sans-serif;
+    --p-font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    width: 100%;
+    background-color: #D4D4D4;
+}
+
+section {
+    margin: 5.25rem;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading {
+    color: var(--dark-black);
+    font-family: var(--h1-font-family);
+    font-size: var(--h1-font);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 6.8125rem;
+    letter-spacing: -0.2025rem;
+}
+
+.sub-heading {
+    color: #343434;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 49px;
+}
+
+.hero-img, .image {
+    width: 40%;
+}
+
+.hero-img img {
+    width: 100%;
+    border-radius: 8.75rem 0rem;
+}
+
+
+/* history section  */
+.history>.heading, .qualities>.heading {
+    text-align: center;
+    margin: 1.25rem;
+}
+
+.paragraph {
+    color: var(--light-black);
+    font-family: var(--p-font-family);
+    font-size: var(--p-font);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.ql{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.image{
+    margin-top: 6rem;
+}
+.image img {
+    width: 100%;
+    border-radius:0 8.75rem;
+}
+
+.list{
+    width: 48%;
+    margin-right: 1rem;
+}
+
+footer{
+    text-align: center;
+    font-size: 16px;
+    font-family: var(--p-font-family);
+    color: var(--light-black);
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero {
+        flex-wrap: wrap;
+    }
+
+
+    section{
+        margin: 2rem;
+    }
+
+    .hero-img, .image {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .ql{
+        flex-wrap: wrap;
+    }
+    
+    .list{
+        width: 100%;
+        margin: 0;
+    }
+    
+
+    .heading{
+        font-size: 58px;
+    }
+  }
+
+
